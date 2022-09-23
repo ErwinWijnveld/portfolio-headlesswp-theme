@@ -1,0 +1,21 @@
+section.image-grid {
+    padding: 3rem 0;
+    
+    .image-grid__wrap {
+        img.image {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    section.image-grid {
+        @for $i from 1 through 10 {
+            .image-grid__wrap[data-mobilecolumns='#{$i}'] {
+                grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+            }
+        }
+    }
+}

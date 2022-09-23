@@ -1,0 +1,17 @@
+section.image-banner{
+    padding: 3rem 0;
+
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    section.image-banner{
+        img{
+            height: 250px !important;
+        }
+    }
+}

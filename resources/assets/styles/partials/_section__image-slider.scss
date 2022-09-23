@@ -1,0 +1,27 @@
+section.image-slider{
+    padding: 3rem 0;
+    overflow: hidden;
+
+    .image-slider__slider {
+        height: 500px;
+        position: relative;
+        
+        .swiper-wrapper {
+            .swiper-slide {
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    section.image-slider{
+        .image-slider__slider {
+            height: 250px !important;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+:root {
+    --swiper-theme-color: #000;
+}
+
+body {
+    background: $background_color;
+}
+
+p, * {
+    color: $text_color;
+}
+
+a {
+    border: none;
+    color: $text_color;
+
+    &:hover {
+        border: none;
+    }
+}
